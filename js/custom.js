@@ -92,7 +92,7 @@ function insertOptionNamSinh(){
         for(var i = 0; i < dsArr.length; i++){
           var dsRow = '';
           dsRow += '<tr>';
-          dsRow += '<th scope="row">'+(i + 1)+'</th>';
+          dsRow += '<th scope="row">'+(i + 1)+'<input type="hidden" class="id" value="'+dsArr[i].id+'"/></th>';
           dsRow += '<td>'+dsArr[i].hoten+'</td>';
           dsRow += '<td>'+dsArr[i].namsinh+'</td>';
           dsRow += '<td>'+GioiTinh(dsArr[i].gioitinh)+'</td>';
