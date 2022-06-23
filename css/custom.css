@@ -1,0 +1,3 @@
+.btn-xoa{display: none;}
+.wrap{padding: 50px;}
+#danhsach tr:hover .btn-xoa{display: block;}

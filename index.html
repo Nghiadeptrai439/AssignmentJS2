@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <title>Project</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-5">
+            <form>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <label class="form-label">Họ tên</label>
+                  <input type="text" class="form-control" id="hoten" name="hoten">  
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                    <label class="form-label">Năm sinh</label>
+                    <select class="form-select" id="namsinh" name="namsinh"></select>
+                </div>
+                <div class="col">
+                    <label class="form-label">Giới tính</label>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gioitinh" id="gt_nam" value="nam">
+                          <label class="form-check-label" for="gt_nam">
+                            Nam
+                          </label>
+                        </div>    
+                      </div> <!-- col-md-4 -->
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gioitinh" id="gt_nu" value="nu">
+                          <label class="form-check-label" for="gt_nu">
+                            Nữ
+                          </label>
+                        </div>
+                      </div> <!-- col-md-4 -->
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gioitinh" id="gt_khac" value="khac">
+                          <label class="form-check-label" for="gt_khac">
+                            Khác
+                          </label>
+                        </div>
+                      </div> <!-- col-md-4 -->
+                    </div><!-- end row -->
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary" id="themdulieu">Nhập</button>
+            </form>
+          </div>
+          <div class="col-7">
+            <p>Danh sách đã nhập</p>
+            <div class="row filter-sort mb-3">
+              <div class="col">
+                <div class="row">
+                  <div class="col-2">Lọc</div>
+                  <div class="col"><select class="form-select" id="loc_namsinh"></select></div>
+                  <div class="col">
+                    <select class="form-select" id="loc_gioitinh">
+                        <option value="0">Giới tính</option>
+                        <option value="nam">Nam</option>
+                        <option value="nu">Nữ</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <div class="col-3">Sắp xếp</div>
+                  <div class="col">
+                    <select class="form-select" id="sapxep_truong">
+                        <option value="hoten">Họ & tên</option>
+                        <option value="namsinh">Năm sinh</option>
+                        <option value="gioitinh">Giới tính</option>
+                        <option value="thoigiantao">Thời gian tạo</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select class="form-select" id="sapxep_huong">
+                        <option value="tang">Tăng</option>
+                        <option value="giam">Giảm</option>
+                    </select>                  
+                  </div>
+                </div>
+                
+              </div>
+            </div><!-- end filter-sort -->
+
+            <div class="row danhsach-wrap">
+              <div class="col">
+                <table class="table table-striped" id="danhsach">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Họ tên</th>
+                      <th scope="col">Năm sinh</th>
+                      <th scope="col">Giới tính</th>
+                      <th scope="col">Thời gian tạo</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                  </tbody>
+                </table>
+              </div>
+              
+            </div><!-- end list -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wrap -->
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>
